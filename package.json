@@ -5,6 +5,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "format": "prettier --write .",
+    "typecheck": "bun run --filter '*' typecheck"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^5.8.2",
