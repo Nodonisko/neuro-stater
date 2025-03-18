@@ -7,16 +7,50 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prebuild": "bunx expo prebuild",
+    "prebuild:clean": "bunx expo prebuild --clean"
   },
   "dependencies": {
-    "expo": "~52.0.38",
+    "@react-navigation/native": "^7.0.15",
+    "@react-navigation/native-stack": "^7.2.1",
+    "babel-plugin-react-compiler": "^19.0.0-beta-bafa41b-20250307",
+    "eas-cli": "^15.0.14",
+    "expo": "~52.0.37",
+    "expo-application": "^6.0.2",
+    "expo-build-properties": "^0.13.2",
+    "expo-font": "~13.0.4",
+    "expo-image": "^2.0.6",
+    "expo-linear-gradient": "^14.0.2",
+    "expo-linking": "~7.0.5",
+    "expo-splash-screen": "~0.29.22",
+    "expo-status-bar": "~2.0.1",
+    "expo-system-ui": "~4.0.8",
+    "expo-updates": "~0.27.4",
+    "jotai": "^2.12.2",
+    "mixpanel-react-native": "^3.0.8",
     "react": "18.3.1",
-    "@types/react": "18.3.18",
-    "react-native": "0.77.1"
+    "react-compiler-runtime": "^19.0.0-beta-bafa41b-20250307",
+    "react-dom": "18.3.1",
+    "react-native": "0.77.1",
+    "react-native-edge-to-edge": "^1.4.3",
+    "react-native-keyboard-controller": "^1.16.7",
+    "react-native-nitro-modules": "0.24.1",
+    "react-native-reanimated": "^4.0.0-beta.3",
+    "react-native-safe-area-context": "^5.2.0",
+    "react-native-screens": "^4.9.2",
+    "react-native-unistyles": "3.0.0-beta.8",
+    "react-native-web": "~0.19.13",
+    "react-native-worklets": "^0.1.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.26.10",
+    "@types/react": "~18.3.18",
+    "jest": "^29.7.0",
+    "jest-expo": "~52.0.6",
+    "react-test-renderer": "18.3.1",
+    "typescript": "^5.8.2"
   },
   "private": true
 }

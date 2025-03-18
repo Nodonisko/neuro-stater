@@ -1,7 +1,65 @@
 {
   "expo": {
-    "name": "my-app",
+    "name": "My App",
     "slug": "my-app",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/base/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/base/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.neuroface.myapp",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/base/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.neuroface.myapp"
+    },
+    "androidNavigationBar": {
+      "barStyle": "light-content"
+    },
+    "plugins": [
+      [
+        "react-native-edge-to-edge",
+        {
+          "android": {
+            "parentTheme": "Default"
+          }
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "deploymentTarget": "16.0"
+          }
+        }
+      ],
+      "./deploymentTargetPlugin.js"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "TODO"
+      }
+    },
+    "runtimeVersion": "fingerprint",
+    "updates": {
+      "url": "TODO"
+    }
   }
 }
